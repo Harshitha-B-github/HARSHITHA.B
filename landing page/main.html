@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know Around you</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    
+    <style>
+       * {
+    
+    box-sizing: border-box;
+}
+ 
+body {
+    background-color: black;
+    color: black;
+
+    
+}
+ 
+nav {
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: black;
+}
+ 
+nav .heading {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+ 
+nav ul {
+    display: flex;
+    list-style: none;
+}
+ 
+nav ul li {
+    padding: 8px 15px;
+    border-radius: 10px;
+    
+}
+ 
+
+nav ul li a {
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    
+}
+ 
+nav ul li:hover {
+  
+    box-shadow: 0 4px 8px 0 palevioletred;
+        padding: 10px;
+
+   
+    border-radius: 10px;
+    
+}
+
+
+.i1{
+  
+    position: absolute;
+    bottom: 60%;
+    left: 60%;
+    
+    box-shadow: 0 4px 8px 0 palevioletred;
+    padding: 10px;
+    display: block;
+  
+}
+.i2{
+  
+  position: absolute;
+  bottom: 32%;
+  left: 70%;
+  display: block;
+  box-shadow: 0 4px 8px 0 palevioletred;
+      padding: 10px;
+}
+.i3{
+  
+  position: absolute;
+  bottom: 32%;
+  left: 50%;
+  display: block;
+  box-shadow: 0 4px 8px 0 palevioletred;
+      padding: 10px;
+}
+.i4{
+  
+  position: absolute;
+  bottom: 3%;
+  left: 60%;
+  display: block;
+  box-shadow: 0 4px 8px 0 palevioletred;
+      padding: 10px;
+}
+  .i1 :hover {   box-shadow: 0 4px 8px 0 blue;
+        padding: 10px;
+    }   
+  .i2 :hover {   box-shadow: 0 4px 8px 0 blue;
+        padding: 10px;
+    }   
+    .i3 :hover {   box-shadow: 0 4px 8px 0 blue;
+        padding: 10px;
+    }   
+    .i4 :hover {   box-shadow: 0 4px 8px 0 blue;
+        padding: 10px;
+    }   
+
+    .overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.i1:hover .overlay {
+  opacity: 1;
+}
+.i2:hover .overlay {
+  opacity: 1;
+}
+.i3:hover .overlay {
+  opacity: 1;
+}
+.i4:hover .overlay {
+  opacity: 1;
+}
+   
+.explore{
+    
+    color: antiquewhite;
+    position: absolute;
+    bottom: 50%;
+    width:700px;
+    text-align: center;
+    box-shadow: 0 4px 4px 0 blue;
+        padding: 10px;
+        font-style: italic;
+        font-size: 20px;
+        left:2%
+}
+button{
+    position: absolute;
+    bottom: 25%}
+
+
+    </style>
+
+</head>
+<body>
+    
+        <nav>
+            <div class="heading">Know Around You</div>
+            
+            <div class="navbar">
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="register.html">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section>
+          <div class="i1">
+            <img src="taj.webp" width="275px" height="170">
+            <div class="overlay">Taj Mahal</div>
+          </div>
+          <div class="i2">
+            <img src="varnasi.jpg" width="275px" height="170">
+            <div class="overlay">Varnasi</div>
+          </div>
+          <div class="i3">
+            <img src="goa.webp" width="275px" height="170">
+            <div class="overlay">Goa Beach</div>
+          </div>
+          <div class="i4">
+            <img src="india gate.jpg" width="275px" height="170">
+            <div class="overlay">India Gate</div>
+          </div><br>
+        
+       <h4 class="explore"> 
+        "If you are looking for an inspirational and authentic holiday experience thats tailored to your needs, you have come to the right place.
+        We have been at the forefront of tourism to Indian regions for 10 years and are proud to be one of the India's leading independent
+        specialist holiday companies."
+       </h4>
+      <a href="default.asp" target="_blank" style="
+        background-color: rgb(137, 197, 218);
+        position: absolute;
+        bottom: 40%;
+        left:20%;
+        color: rgb(228, 23, 91);
+        display: absolute; font-size: medium; padding: 10px;
+        padding: 14px 25px;
+        
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        ">Explore</a>
+</section>
+
+</body>
+
+</html>

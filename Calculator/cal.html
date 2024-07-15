@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <style>
+       *{
+         box-sizing: border-box;
+       }
+       body{
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         background-color: black;
+       }
+      .calculator{
+         margin-top: 30px;
+         border: 1px solid ;
+         padding: 8px 12px 12px 12px;
+         border-radius: 16px;
+         background: transparent;
+         box-shadow: 0px 3px 15px;
+         
+         background-color: black;
+      }
+      hr{
+         margin-bottom: 4px;
+      }
+      input{
+         width: 320px;
+         border: none;
+         padding: 20px;
+         margin: 5px 10px 10px 10px;
+         background: transparent;
+         box-shadow: 0px 3px 15px;
+         font-size: 40px;
+         text-align: right;
+         cursor: pointer;
+         color: rgb(15, 15, 15);
+      }
+      input::placeholder{
+         color: antiquewhite;
+         
+      }
+      button{
+         border: none;
+         width: 60px;
+         height: 60px;
+         margin: 10px;
+         border-radius: 50%;
+         background: transparent;
+         color: antiquewhite;
+         font-size: 20px;
+         box-shadow: -8px -8px 15px;
+         cursor: pointer;
+      }
+      button:hover{
+         box-shadow: 0 4px 4px 0 black;
+      }
+      .equalBtn{
+         background-color: orange;
+      }
+      .orange-bg{
+         background-color: orange;
+      }
+      .gray-bg{
+         background-color: slategray;
+      }
+      .darkgray-bg{
+         background-color: steelblue;
+      }
+      .operator{
+         color: greenyellow;
+      }
+    </style>
+    <div class="container" style="position: relative; bottom: -110px; " >
+      <div class="Calculator" style="background-image: linear-gradient(to right,lightblue,white,lightblue);padding-top: 10px;" >
+        <input type="text" style="background-color: snow;"  id="inputBox" placeholder="0"/>
+        <div>
+            <button class="button gray-bg">AC</button>
+            <button class="button gray-bg">DEL</button>
+            <button class="button gray-bg">%</button>
+            <button class="button orange-bg">/</button>
+        </div>
+        <div>
+            <button class="button darkgray-bg">7</button>
+            <button class="button darkgray-bg">8</button>
+            <button class="button darkgray-bg">9</button>
+            <button class="button orange-bg">*</button>
+        </div>
+        <div>
+            <button class="button darkgray-bg">4</button>
+            <button class="button darkgray-bg">5</button>
+            <button class="button darkgray-bg">6</button>
+            <button class="button orange-bg">+</button>
+         </div>
+         <div>
+            <button class="button darkgray-bg">1</button>
+            <button class="button darkgray-bg">2</button>
+            <button class="button darkgray-bg">3</button>
+            <button class="button orange-bg">-</button>
+         </div>  
+         <div>
+            <button class="button darkgray-bg">0</button>
+            <button class="button darkgray-bg">00</button>
+            <button class="button darkgray-bg">.</button>
+            <button class="button equalBtn">=</button>
+         </div>  
+      </div>
+    </div>
+<script src="script.js"></script>
+
+</body>
+</html>
