@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Food Order Summary</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+
+    .order-box {
+      max-width: 400px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .hotel-info {
+      display: flex;
+      align-items: center;
+    }
+
+    .hotel-info img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+
+    .hotel-name {
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+
+    .locality {
+      color: gray;
+      font-size: 0.9em;
+    }
+
+    .item-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 20px 0 10px;
+    }
+
+    .quantity {
+      display: flex;
+      align-items: center;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      
+    }
+
+    .quantity button {
+      padding: 5px 10px;
+      border: none;
+      background: #eee;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .quantity span {
+      padding: 0 10px;
+    }
+
+    
+
+    .no-contact {
+      margin-top: 15px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      font-size: 0.85em;
+      border-radius: 5px;
+    }
+
+    .bill-details {
+      margin-top: 20px;
+      font-size: 0.95em;
+    }
+
+    .bill-details p {
+      display: flex;
+      justify-content: space-between;
+      margin: 6px 0;
+    }
+
+    .add-tip {
+      color: red;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+
+    .total-pay {
+      font-weight: bold;
+      font-size: 1.1em;
+      border-top: 1px solid #ddd;
+      padding-top: 10px;
+      margin-top: 10px;
+    }
+    button{
+        border-radius: 10px;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        font-size: 22px;
+        color: white;
+        background-color: orangered;
+    }
+    .home{
+      font-size: .9em;
+      position: relative;
+      margin-left:43%;
+      color: rgb(128, 124, 124);
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div class="order-box">
+ 
+  <div class="hotel-info">
+    
+    <img src="biriyani1.jpg" alt="Biriyani">
+    
+    <div>
+      <div class="hotel-name">Adil Hotel</div>
+      <div class="locality">Ashiravd Locality</div>
+    </div>
+    <div class="home" onclick="location.href='index.html'";>Home</div>
+  </div>
+
+  <div class="item-row">
+    <div>Chicken Biriyani</div>
+    <div class="quantity">
+      <button onclick="changeQty(-1)">−</button>
+      <span id="qty">1</span>
+      <button onclick="changeQty(1)">+</button>
+    </div>
+    <div>₹<span id="item-price">200</span></div>
+  </div>
+
+ 
+  <div class="no-contact">
+    <input type="checkbox"> 
+    <label>
+      <strong>Opt in for No-contact Delivery</strong><br>
+      Unwell, or avoiding contact? Partner will place the order outside your door (not for COD).
+    </label>
+  </div>
+
+  
+  <div class="bill-details">
+    <p>Item Total<span>₹<span id="item-total"></span></span></p>
+    <p>Delivery Fee | 11.5 kms <span>₹<span id="delivery-fee">76</span></span></p>
+    <p>Delivery Tip<span class="add-tip" onclick="addTip()">Add tip</span></p>
+    <p>GST & Other Charges <span>₹<span id="gst">13.53</span></span></p>
+    <p class="total-pay">TO PAY<span>₹<span id="total-pay"></span></span></p>
+  </div>
+  <div class="pay">
+    <button class="PAY" onclick="pay()">Pay</button>
+</div>
+</div>
+
+
+<script>
+  let quantity = 1;
+  const pricePerItem = 200;
+  const deliveryFee = 76;
+  const gst = 13.53;
+  let tip = 0;
+
+  function updatePrices() {
+    const itemTotal = pricePerItem * quantity;
+    const total = itemTotal + deliveryFee + gst + tip;
+
+    document.getElementById('qty').textContent = quantity;
+    document.getElementById('item-price').textContent = itemTotal;
+    document.getElementById('item-total').textContent= itemTotal;
+    document.getElementById('total-pay').textContent = total.toFixed(2);
+  }
+
+  function changeQty(change) {
+    quantity += change;
+    if (quantity < 1) quantity = 1;
+    updatePrices();
+  }
+
+  function addTip() {
+    tip = prompt("Enter tip amount:", "20");
+    tip = parseFloat(tip) || 0;
+    updatePrices();
+  }
+
+
+  updatePrices();
+
+  document.querySelectorAll('.PAY').forEach(button => {
+        button.addEventListener('click', () => {
+           window.alert('Payment Done!');
+  });
+});
+</script>
+
+</body>
+</html>

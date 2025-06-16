@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitezia</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=star" />
+    <style>
+        body {
+            cursor: pointer;
+        }
+
+        /* .container_1{
+            position: relative;
+            border-bottom:solid rgb(255, 81, 0)1px;
+           
+           } */
+        h1 {
+            color: rgb(238, 159, 13);
+            text-shadow: 2px 2px 3px rgb(104, 0, 0);
+            margin: 20px 30px 20px 85px;
+            font-size: 44px;
+
+        }
+
+        .container_2 {
+            float: right;
+            display: flex;
+            margin-right: 5%;
+            margin-top: -4%;
+            justify-content: space-between;
+        }
+
+        a {
+            color: rgb(255, 115, 0);
+            font-size: 18px;
+            padding: 15px;
+            text-decoration: none;
+            font-size: 20px;
+
+        }
+
+        a:hover,
+        sup:hover {
+            background-color: rgb(255, 0, 0);
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 15px;
+            border-radius: 5px;
+
+        }
+
+
+        h3 {
+            margin: 20px 30px 20px 85px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        #img1 {
+            border-radius: 50%;
+            padding: 0.9%;
+            transition: width 2s, height 2s, transform 2s;
+
+        }
+
+        #img1:hover {
+            box-shadow: 1px 1px 3px brown;
+            opacity: 0.6;
+            transform: rotate(360deg);
+            width: 100px;
+            height: 100px;
+            /* transform: scale(.2); */
+        }
+
+        .container_4 {
+            margin: 20px 0px 20px 60px;
+
+        }
+
+        sup {
+            color: rgb(207, 42, 42);
+            font-size: 15px;
+        }
+
+        .restaurant_1 {
+            transition: .2s;
+            position: relative;
+            border-radius: 25px;
+            margin-left: 10%;
+
+        }
+
+        .restaurant_1:hover {
+            transform: scale(.9);
+        }
+
+        .material-symbols-outlined {
+            color: rgb(255, 0, 0);
+        }
+
+        .hotelname {
+            font-size: 20px;
+            line-height: 0px;
+        }
+
+        .rating {
+            position: absolute;
+            top: 233px;
+            left: 35px;
+        }
+
+        .info {
+            line-height: 0px;
+            color: rgb(97, 94, 94);
+        }
+
+        .place {
+            color: rgb(97, 94, 94);
+        }
+
+        .container_5 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 290px));
+            margin-top: 20px;
+            margin-left: 50px;
+        }
+
+        .footer {
+            padding: 40px;
+            position: relative;
+            width: 94.2%;
+            background-color: rgb(255, 115, 0);
+            color: azure;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container_1">
+        <h1>Bitezia</h1>
+        <div class="container_2">
+            <a href="">Search</a>
+            <a href="">Offers<sup>New</sup></a>
+            <a href="">Help</a>
+            <a href="">Sign in</a>
+            <a href="">Cart</a>
+        </div>
+    </div>
+    <div class="container_3">
+        <h3>Whats on Your Mind?</h3>
+        <div class="container_4">
+            <img src="biriyani.jpg" alt="No Image Found" width="100px" height="100px" id="img1">
+            <img src="pizza.webp" alt="No Image Found" width="100px" height="100px" id="img1">
+            <img src="cake.webp" alt="No Image Found" width="100px" height="100px" id="img1">
+            <img src="rolls.jpg" alt="No Image Found" width="100px" height="100px" id="img1">
+            <img src="smoothie.jpg" alt="No Image Found" width="100px" height="100px" id="img1">
+            <img src="chinese.jpg" alt="No Image Found" width="100px" height="100px" id="img1">
+            <img src="icecream.cms" alt="No Image Found" width="100px" height="100px" id="img1">
+            <img src="chol_bhatura.webp" alt="No Image Found" width="100px" height="100px" id="img1">
+            <img src="res2.webp" alt="No Image Found" width="100px" height="100px" id="img1">
+            <img src="res3.webp" alt="No Image Found" width="100px" height="100px" id="img1">
+            <img src="biriyani1.jpg" alt="No Image Found" width="100px" height="100px" id="img1">
+        </div>
+    </div>
+    <div class="container_5">
+        <div class="restaurant_1" onclick="location.href='Adilhotel.html';">
+            <img src="biriyani1.jpg" alt="No Image Found" width="250px" height="200px" style="border-radius: 15px;">
+            <p style="color: rgb(255, 255, 255);position: absolute;top: 150px;font-size: 20px;left: 20px;"><b>ITEMS AT
+                    Rs.129</b></p>
+            <p class="hotelname"><b>Adil Hotel</b></p>
+            <span class="material-symbols-outlined">star</span>
+            <p class="rating">4.3 | 35-40 mins</p>
+            <p class="info">North Indian,Biriyani,Tandoor</p>
+            <p class="place">Ashirvad Locality</p>
+        </div>
+
+        <div class="restaurant_1">
+            <img src="res2.webp" alt="No Image Found" width="250px" height="200px" style="border-radius: 15px;">
+            <p class="hotelname"><b>Pasta Wolrd</b></p>
+            <span class="material-symbols-outlined">star</span>
+            <p class="rating">4.2 | 40-45 mins</p>
+            <p class="info">North Indian,Pasta,Sandwich</p>
+            <p class="place">NP Nagar</p>
+        </div>
+        <div class="restaurant_1">
+            <img src="res3.webp" alt="No Image Found" width="250px" height="200px" style="border-radius: 15px;">
+            <p style="color: rgb(255, 255, 255);position: absolute;top: 150px;font-size: 20px;left: 20px;"><b>FREE
+                    DELIVERY</b></p>
+            <p class="hotelname"><b>Dolphin</b></p>
+            <span class="material-symbols-outlined">star</span>
+            <p class="rating">4.5 | 20-15 mins</p>
+            <p class="info">Pastry,Ice creams,Smoothie</p>
+            <p class="place">Sharada Nagar</p>
+        </div>
+        <div class="restaurant_1">
+            <img src="biriyani1.jpg" alt="No Image Found" width="250px" height="200px" style="border-radius: 15px;">
+            <p style="color: rgb(255, 255, 255);position: absolute;top: 150px;font-size: 20px;left: 20px;"><b>ITEMS AT
+                    Rs.129</b></p>
+            <p class="hotelname"><b>Adil Hotel</b></p>
+            <span class="material-symbols-outlined">star</span>
+            <p class="rating">4.3 | 35-40 mins</p>
+            <p class="info">North Indian,Biriyani,Tandoor</p>
+            <p class="place">Ashirvad Locality</p>
+        </div>
+        <div class="restaurant_1">
+            <img src="res2.webp" alt="No Image Found" width="250px" height="200px" style="border-radius: 15px;">
+            <p class="hotelname"><b>Pasta Wolrd</b></p>
+            <span class="material-symbols-outlined">star</span>
+            <p class="rating">4.2 | 40-45 mins</p>
+            <p class="info">North Indian,Pasta,Sandwich</p>
+            <p class="place">NP Nagar</p>
+        </div>
+        <div class="restaurant_1">
+            <img src="res3.webp" alt="No Image Found" width="250px" height="200px" style="border-radius: 15px;">
+            <p style="color: rgb(255, 255, 255);position: absolute;top: 150px;font-size: 20px;left: 20px;"><b>FREE
+                    DELIVERY</b></p>
+            <p class="hotelname"><b>Dolphin</b></p>
+            <span class="material-symbols-outlined">star</span>
+            <p class="rating">4.5 | 20-15 mins</p>
+            <p class="info">Pastry,Ice creams,Smoothie</p>
+            <p class="place">Sharada Nagar</p>
+        </div>
+        <div class="restaurant_1">
+            <img src="biriyani1.jpg" alt="No Image Found" width="250px" height="200px" style="border-radius: 15px;">
+            <p style="color: rgb(255, 255, 255);position: absolute;top: 150px;font-size: 20px;left: 20px;"><b>ITEMS AT
+                    Rs.129</b></p>
+            <p class="hotelname"><b>Adil Hotel</b></p>
+            <span class="material-symbols-outlined">star</span>
+            <p class="rating">4.3 | 35-40 mins</p>
+            <p class="info">North Indian,Biriyani,Tandoor</p>
+            <p class="place">Ashirvad Locality</p>
+        </div>
+        <div class="restaurant_1">
+            <img src="res2.webp" alt="No Image Found" width="250px" height="200px" style="border-radius: 15px;">
+            <p class="hotelname"><b>Pasta Wolrd</b></p>
+            <span class="material-symbols-outlined">star</span>
+            <p class="rating">4.2 | 40-45 mins</p>
+            <p class="info">North Indian,Pasta,Sandwich</p>
+            <p class="place">NP Nagar</p>
+        </div>
+        <div class="restaurant_1">
+            <img src="res3.webp" alt="No Image Found" width="250px" height="200px" style="border-radius: 15px;">
+            <p style="color: rgb(255, 255, 255);position: absolute;top: 150px;font-size: 20px;left: 20px;"><b>FREE
+                    DELIVERY</b></p>
+            <p class="hotelname"><b>Dolphin</b></p>
+            <span class="material-symbols-outlined">star</span>
+            <p class="rating">4.5 | 20-15 mins</p>
+            <p class="info">Pastry,Ice creams,Smoothie</p>
+            <p class="place">Sharada Nagar</p>
+        </div>
+        <div class="restaurant_1">
+            <img src="res2.webp" alt="No Image Found" width="250px" height="200px" style="border-radius: 15px;">
+            <p class="hotelname"><b>Pasta Wolrd</b></p>
+            <span class="material-symbols-outlined">star</span>
+            <p class="rating">4.2 | 40-45 mins</p>
+            <p class="info">North Indian,Pasta,Sandwich</p>
+            <p class="place">NP Nagar</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p id="sl" style="font-size: 32px;">Social links</p>
+    </div>
+
+
+</body>
+
+</html>

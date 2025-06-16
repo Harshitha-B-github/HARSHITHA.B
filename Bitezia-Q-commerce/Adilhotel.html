@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitezia</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=star" />
+    
+    <style>
+       body{
+        cursor: pointer;
+      }
+       .container_1{
+            position: relative;
+            border-bottom:solid rgb(255, 81, 0)1px;
+           
+           }
+       h1{
+        color: rgb(238, 159, 13);
+        text-shadow: 2px 2px 3px rgb(104, 0, 0);
+        margin: 20px 30px 20px 85px;
+        font-size: 44px;
+        
+       }
+       .container_2{
+            float: right;
+          display: flex;
+          margin-right: 5%;
+          margin-top: -4%;
+          justify-content: space-between;
+        }
+       
+    a{
+            color: rgb(255, 115, 0);
+            font-size: 18px;
+            padding: 15px;
+            text-decoration: none;
+            font-size: 20px;
+            
+        }
+        a:hover,sup:hover{
+            background-color: rgb(255, 0, 0);
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 15px;
+            border-radius: 5px;
+          
+        }
+         h6{
+            color: rgb(122, 121, 121);
+            cursor: pointer;
+            position: relative;
+            margin-left:25%;
+        }
+        .p1{
+            position: relative;
+            margin-left:25%;
+            font-size: 32px;
+            font-weight: bold;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .phase_1{
+            border: solid rgb(168, 165, 165)1px;
+            position: relative;
+            left:25%;
+            width: 45%;
+            height: 110px;
+            border-radius: 0px 0px 15px 15px;
+            padding: 10px;
+            box-shadow: -4px 4px  10px rgb(148, 22, 22);
+          }
+        span{
+            color: orangered;
+        } 
+       .p2{
+        position: relative;
+        top:-40px;
+        left:39px;
+        font-weight: 900;
+       }
+       .p3{
+        color: orangered;
+        text-decoration: underline;
+        position: relative;
+        top:-40px;
+       }
+       .p4{
+        position: relative;
+        top: -45px;
+        font-weight: 900;
+       }
+       .p5{
+        color: rgb(139, 137, 137);
+        font-size: 14px;
+        position: relative;
+        top:-77px;
+        left:70px;
+       }.p6{
+        position: relative;
+        top:-85px;
+        font-weight: 900;
+       }
+       .p9{
+         position: relative;
+         top:15px;
+         margin-left:25%;
+         font-size: 22px;
+         font-weight: 600;
+       }
+       .box_1{
+        display: flex;
+        gap:30px;
+        align-items: center;
+        margin-top:2%;
+        border: 1px solid;
+        width: 26.5%;
+        border-radius: 25px;
+        padding: 9px;
+        height: 70px;
+       }
+       .boxes{
+        display: flex;
+        gap: 67px;
+        margin-left:25% ;}
+       .circle{
+        border: solid rgb(255, 230, 0) 3px;
+        border-radius: 50%;
+        width:70px;
+        background-color: rgb(255, 96, 4);
+       }.p10{
+        font-size: 12px;
+        padding: 5px;
+        text-align: center;
+        color: azure;
+       }.p7{
+        font-size: 20px;
+        font-weight: 800;
+       }
+       .p8{
+        font-size: 15px;
+        font-weight: 800;
+        color: rgb(134, 132, 132);}
+        .p14{
+        position: relative;
+        top:25px;
+        margin-left:45.5%;
+       }
+       .search{
+        border-radius: 15px;
+        background-color: silver;
+        position: relative;
+        top: 25px;
+        border: none;
+        color: rgb(22, 11, 11);
+        font-size: medium;
+        left:24.5%;
+        width:47.2%;
+        height: 40px;
+       }.filter{
+        display: flex;
+        gap: 10px;
+        margin-left: 24.5%;
+        position: relative;
+        top: 45px;
+       }
+       .filters{
+        border-radius: 15px;
+        border: solid 0.5px  rgb(58, 61, 61);
+        background-color: green;
+        color: azure;
+        padding: 8px;
+       }
+       .p19{
+        position: relative;
+        top:40px;
+        margin-left:25%;
+        font-size: 20px;
+       }.box_3{
+        border: solid rgb(250, 8, 8);
+        border-radius: 5px;
+        position: relative;
+        padding: 7px;
+        width: 1px;
+        top:40px;
+    }.box_4{
+        border: solid green;
+        border-radius: 5px;
+        position: relative;
+        padding: 7px;
+        width: 1px;
+        top:40px;
+    }
+    .circle3{
+        border: solid rgb(250, 8, 8) 2px;
+        border-radius: 50%;
+        position: absolute;
+        top: 15%;
+        left:2px;
+        padding: 3px;
+        background-color:rgb(250, 8, 8) ;
+    }.circle4{
+        border: solid green 2px;
+        border-radius: 50%;
+        position: absolute;
+        top: 15%;
+        left:2px;
+        padding: 3px;
+        background-color:green ;
+    }
+    .item1{
+        border-bottom: solid 1px rgb(105, 104, 104);
+        position: relative;
+        left:25%;
+        width:47%;
+        height: 200px;
+    }
+    .redbox,.greenbox{
+        position: relative;
+    }
+    .p20{
+        position: relative;
+        top:25px;
+        font-weight: 600;
+    }.p21{
+        position: relative;
+        top:8px;
+    }
+    .p22{
+        position: relative;
+        color: rgb(117, 116, 116);
+        width:76%;
+     }.imgggg{
+       position: relative;
+       margin-left:560px;
+       bottom:120px;
+    }#num1{
+        border-radius: 9px;
+        background-color: white;
+        text-align: center;
+        color: green;
+        font-weight: 700;
+        position: relative;
+       bottom:140px;
+        left:83.5%;
+         padding: 5px;
+        width: 60px;
+    }.view{
+        background-color: orange;
+        position: relative;
+        width: 737px;
+        height:40px;
+        border-radius: 10px;
+        margin-left:388px;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        font-size: 20px;
+        align-items: center;
+        padding: 5px;
+    }
+    
+    
+    </style>
+    
+</head>
+<body>
+    
+    <div class="container_1">
+        <h1>Bitezia</h1>
+        <div class="container_2">
+            <a href="">Search</a>
+            <a href="">Offers<sup>New</sup></a>
+            <a href="">Help</a>
+            <a href="">Sign in</a>
+            <a href="">Cart</a>
+         </div>
+    </div>
+    <div class="page">
+    <h6 onclick="location.href='index.html';">Home / Ashirvad Locality / Adil Hotel</h6>
+</div>
+<p class="p1">Adil Hotel</p>
+<div class="phase_1">
+    <span class="material-symbols-outlined">star</span>
+    <p class="p2">4.3(545 ratings) | Rs.200 for two</p>
+    <p class="p3">North Indian</p>
+    <p class="p4">Outlet</p>
+    <p class="p5">Ashiravd Locality</p>
+    <p class="p6">40-45 mins</p>
+</div>
+<div class="phase_2">
+    <p class="p9">Deals for you</p>
+    <div class="boxes">
+        <div class="box_1">
+             <div class="circle"><p class="p10">DEAL OF DAY</p></div>
+             <div class="infro">
+
+                     <div class="p7">Items At Rs.79</div>
+                     <div class="p8">ENDS IN 2hrs</div>
+                     
+            </div>
+        </div>
+
+
+        <div class="box_1">
+              <div class="circle"><p class="p10">OFFER OF DAY</p></div>
+              <div class="infro">
+                   <div class="p7">20% Off Upto Rs.150</div>
+                   <div class="p8">USE AMEXCORP </div>
+                </div>
+        </div>
+    </div> 
+</div>
+<p class="p14">--- MENU ---</p>
+<button class="search">Search for dishes</button>
+<div class="filter">
+     <button class="filters" style="background-color: green;">Veg</button>
+     <button class="filters" style="background-color: red;">Non-Veg</button>
+     <button class="filters" style="background-color: rgb(133, 128, 128);">Bestseller</button>
+</div>
+    <p class="p19">Recommended(3)</p>
+
+<div class="item1">
+        <div class="redbox">
+            <div class="box_3">
+                <div class="circle3">
+                </div>
+            </div>
+        </div>
+        <p class="p20">Chicken Biriyani</p>
+        <p class="p21">Rs.200</p>
+        <p class="p22">A flavorful and aromatic Biryani layered with tender chunks of chicken, inspired by the traditional flavors of Champaran.
+        </p>
+        <div class="imgggg">
+            <img src="biriyani1.jpg"alt="No Image Found" width="180px" height="140px" style="border-radius: 15px;">
+        </div>
+        <div>
+            <button id="num1" >Add</button>   </div>
+        </div>
+</div>
+<div class="item1">
+            <div class="redbox">
+                <div class="box_3">
+                    <div class="circle3">
+                  </div>
+               </div>
+            </div>
+            <p class="p20">Chicken Dum Biriyani</p>
+            <p class="p21">Rs.250</p>
+            <p class="p22">A flavorful and aromatic Biryani layered with tender chunks of chicken, inspired by the traditional flavors of Champaran.
+            </p>
+            <div class="imgggg">
+                <img src="biriyani2.jpg"alt="No Image Found" width="180px" height="140px" style="border-radius: 15px;">
+            </div>
+            <div>
+                <button id="num1"  >Add  </button> </div>
+            </div>
+</div>
+<div class="item1">
+    <div class="greenbox">
+        <div class="box_4">
+            <div class="circle4">
+          </div>
+       </div>
+    </div>
+    <p class="p20">Chole Bhatura</p>
+    <p class="p21">Rs.150</p>
+    <p class="p22">A combination of spicy chickpeas (chole) and deep-fried, leavened bread (bhatura).
+    </p>
+    <div class="imgggg">
+        <img src="chol_bhatura.webp"alt="No Image Found" width="180px" height="140px" style="border-radius: 15px;">
+    </div>
+    <div>
+        <button id="num1">Add </button>  </div>
+</div>
+<div class="view" onclick="location.href='Payment.html';" >
+        <div>item added </div>
+        <div>VIEW CART</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script>
+     document.querySelectorAll('#num1').forEach(button => {
+        button.addEventListener('click', () => {
+           window.alert('Item added to cart!');
+  });
+});
+    function displayTime()
+    {
+       const now=new Date();
+       const hours = String(now.getHours()).padStart(2, '0');
+       const minutes = String(now.getMinutes()).padStart(2,'0');
+       const seconds = String(now.getSeconds()).padStart(2,'0');
+       document.getElementById("time").textContent= `${hours}:${minutes}:${seconds}`;
+    }
+
+   
+   displayTime();
+
+  
+   setInterval(displayTime,1000);
+
+  
+
+</script>
+    </body>
+    </html>
+       
